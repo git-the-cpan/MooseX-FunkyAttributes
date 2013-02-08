@@ -1,8 +1,12 @@
 package MooseX::FunkyAttributes::Role::Attribute;
 
+use 5.008;
+use strict;
+use warnings;
+
 BEGIN {
 	$MooseX::FunkyAttributes::Role::Attribute::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::FunkyAttributes::Role::Attribute::VERSION   = '0.001';
+	$MooseX::FunkyAttributes::Role::Attribute::VERSION   = '0.002';
 }
 
 use Moose::Role;
@@ -63,7 +67,7 @@ for my $i (@i)
 	
 	around $guts_method => sub
 	{
-		my ($orig, $self, @args) = @_;		
+		my ($orig, $self, @args) = @_;
 		if ($self->has_all_inliners) {
 			return $self->$custom->($self, @args);
 		}
@@ -319,6 +323,39 @@ An example for the C<diameter> example in the SYNOPSIS
 
 =back
 
+Your attribute metaobject has the following methods (in addition to the
+standard L<Moose::Meta::Attribute> stuff):
+
+=over
+
+=item C<custom_get>
+
+=item C<custom_set>
+
+=item C<custom_has>
+
+=item C<custom_clear>, C<has_custom_clear>
+
+=item C<custom_weaken>, C<has_custom_weaken>
+
+=item C<custom_init>, C<has_custom_init>
+
+=item C<custom_inline_get>, C<has_custom_inline_get>
+
+=item C<custom_inline_set>, C<has_custom_inline_set>
+
+=item C<custom_inline_has>, C<has_custom_inline_has>
+
+=item C<custom_inline_clear>, C<has_custom_inline_clear>
+
+=item C<custom_inline_weaken>, C<has_custom_inline_weaken>
+
+=item C<accessor_should_be_inlined>
+
+=item C<has_all_inliners>
+
+=back
+
 =head1 BUGS
 
 Please report any bugs to
@@ -334,7 +371,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012-2013 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

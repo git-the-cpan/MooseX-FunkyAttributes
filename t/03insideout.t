@@ -1,9 +1,35 @@
+=head1 PURPOSE
+
+Check the C<InsideOut> trait works using mostly the same C<Circle>
+class as in C<< t/02funky.t >>, but the C<radius> attribute stored
+inside out.
+
+Checks the hashref's guts to make sure no attributes are inadvertantly
+stored there.
+
+=head1 TODO
+
+Check an immutable class.
+
+=head1 AUTHOR
+
+Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
+
+=head1 COPYRIGHT AND LICENCE
+
+This software is copyright (c) 2012-2013 by Toby Inkster.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
 BEGIN {
 	package Local::Circle;
 	no thanks;
 	use Moose;
 	use MooseX::FunkyAttributes;
-	use constant PI => 3.14159; 
+	use constant PI => 3.14159;
 	has radius => (
 		traits     => [ InsideOutAttribute ],
 		is         => 'rw',

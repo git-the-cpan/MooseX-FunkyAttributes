@@ -1,5 +1,8 @@
 Changes
+COPYRIGHT
+examples/funky-circle.pl
 examples/inside-out.pl
+HACKING
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
 inc/Module/Install/AutoInstall.pm

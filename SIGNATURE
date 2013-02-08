@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,13 +14,16 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 28edfb077363b028967dd592bfc2b7aa8cda97a9 Changes
-SHA1 cc087c3dd6e1b519c680e68cd0231735a68300a0 LICENSE
-SHA1 152d72f84d3db3d6b8c73587cb745e842d105492 MANIFEST
-SHA1 558e851719f8d1e7e3738e1c7998e5da06c07269 META.yml
-SHA1 da50d35f9bc21473691888031579fd3ad684e205 Makefile.PL
-SHA1 aa955137c9ace89292f116b0d486475157685cf8 README
-SHA1 74fcb8c75f35b40acae207e0deded409a82a5666 examples/inside-out.pl
+SHA1 dcd1763c22185e1c1fc6430ff7d3816f581b8137 COPYRIGHT
+SHA1 e14075903b3167d46c24786901a38348bfcc2f6d Changes
+SHA1 58e47fed556f626572681c48158a3ecd44ce179d HACKING
+SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
+SHA1 dc4e35fc20b65b83e889d9c97d7cd02ff016d9f6 MANIFEST
+SHA1 3d5aee03810e14cdc3537d8cdf279d52d1b0ada2 META.yml
+SHA1 b9d5dd0b476253d37384aed42664179605286153 Makefile.PL
+SHA1 12a50fb8a0d737c1e8649908eb3e48f4c6b2f1ff README
+SHA1 f10dcd5581629c1954d07dae2e079371af49192b examples/funky-circle.pl
+SHA1 d921bba2e0d77c50bba748759f5a85a058d38162 examples/inside-out.pl
 SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
 SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
 SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
@@ -41,23 +44,23 @@ SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
 SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
 SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
 SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 8325093bcdec59081d459465a1ad2dedfa813138 lib/MooseX/FunkyAttributes.pm
-SHA1 ca734b79411142d8e42edf40783cbe77ee5a315a lib/MooseX/FunkyAttributes/Meta/Accessor.pm
-SHA1 160ff762ad5c3f1b29b6dd28c00bd42fba1f2730 lib/MooseX/FunkyAttributes/Role/Attribute.pm
-SHA1 fa30fb07123eac61efed72e79f59ca63db0da6d5 lib/MooseX/FunkyAttributes/Role/Attribute/Delegated.pm
-SHA1 4ca2c640adc7b0f55652e72d49cf68482e1427a7 lib/MooseX/FunkyAttributes/Role/Attribute/InsideOut.pm
-SHA1 551762a55316297dfca58a76c194120cb950958c meta/changes.pret
+SHA1 938efc7894986495d0dd0b3750b3ce7630b0ada1 lib/MooseX/FunkyAttributes.pm
+SHA1 70e4ac804dec49edfd0aa5b07908642b34ebeadd lib/MooseX/FunkyAttributes/Meta/Accessor.pm
+SHA1 112dc06be6fc63f6aa7a3a4d7fb604e3fa5c65bf lib/MooseX/FunkyAttributes/Role/Attribute.pm
+SHA1 1d3c03d5e3f1411634242e19020d983919520385 lib/MooseX/FunkyAttributes/Role/Attribute/Delegated.pm
+SHA1 a2b0005a9c1021c66d7eed8b0e4927f3a641090a lib/MooseX/FunkyAttributes/Role/Attribute/InsideOut.pm
+SHA1 7d301699fd6152988a7065d51ae083de8e7caec6 meta/changes.pret
 SHA1 04c8e01a8ca950ed25322116cedbd4a431eb493d meta/doap.pret
 SHA1 8d3355cfe0de78fde6dc9a24d3a48a8252903fb0 meta/makefile.pret
-SHA1 abe6558cdcd56a249a4c1ee76dc9dff01fb3e82e t/01basic.t
-SHA1 f77501c6c2947cbb14194ad0446fdc062267ac98 t/02funky.t
-SHA1 6e2a1cd95073d19f9d50e8be23051ca2d9743731 t/03insideout.t
-SHA1 08427da3b91567416dc31100f1bbc677fca84480 t/04delegated.t
-SHA1 41b071060784a7577f575cad90910fc924b8e2ff t/05builder.t
+SHA1 e46d330df34d8cbaf0fd53a63a9dc78790c6b50b t/01basic.t
+SHA1 718622f377dac20ba5271fbb0c3ec9138a37f8b4 t/02funky.t
+SHA1 be783dc00ccf80b13fcd4d3e31935a11f2adca1a t/03insideout.t
+SHA1 9aa90e1df78f3b5556e330c68deecd93e77c9866 t/04delegated.t
+SHA1 4a5c80242c92af2f67f4d0d8d44bd9d55492879e t/05builder.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAlBXSbIACgkQzr+BKGoqfTm4ZwCgjg5b3CxpMwDg2KzLHAGTe4Ru
-GgsAn2VkAdJNyLBOQdYm2qrR7Erh0qy4
-=xcF6
+iEYEARECAAYFAlEVSxgACgkQzr+BKGoqfTlZUgCfd0iZo6twEGgFK5yU+G52R6pF
+G24AoIYaBHMWTusCp/Za+FV2zlKmCkSH
+=xgVU
 -----END PGP SIGNATURE-----

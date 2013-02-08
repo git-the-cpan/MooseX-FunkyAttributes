@@ -22,10 +22,6 @@ SYNOPSIS
           custom_has  => sub { $_->has_radius },
        );
 
-STATUS
-    At the moment this is primarily an experiment. It's probably not wise to
-    deploy it in live projects.
-
 DESCRIPTION
     The MooseX::FunkyAttributes module itself just provides some convenience
     functions for the attribute traits that are distributed with it.
@@ -108,13 +104,20 @@ SEE ALSO
     MooseX::FunkyAttributes::Role::Attribute::InsideOut,
     MooseX::FunkyAttributes::Role::Attribute::Delegated.
 
+    These effect storage for whole object instances; not just one attribute:
     MooseX::GlobRef, MooseX::InsideOut, MooseX::ArrayRef.
+
+    MooseX::CustomInitArgs - if you have (as in the SYNOPSIS) one attribute
+    which is calculated from another (diameter from radius),
+    MooseX::CustomInitArgs will allow you to accept both attributes in the
+    constructor (i.e. accept a diameter in the constructor, halve it, and
+    set the radius attribute).
 
 AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
 COPYRIGHT AND LICENCE
-    This software is copyright (c) 2012 by Toby Inkster.
+    This software is copyright (c) 2012-2013 by Toby Inkster.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

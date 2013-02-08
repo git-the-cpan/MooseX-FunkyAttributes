@@ -4,3 +4,13 @@
 	issued  2012-09-17;
 	label   "Initial release".
 
+`MooseX-FunkyAttributes 0.002 cpan:TOBYINK`
+	issued  2013-02-08;
+	changeset [
+		item "General tiding up."^^Change;
+		item "Include example scripts."^^Documentation;
+		item "Show MooseX::CustomInitArgs in example, and include in SEE ALSO."^^Documentation;
+		item "Document the test suite."^^Documentation;
+		item "Document the metaobject interface (albeit briefly)."^^Documentation;
+	].
+

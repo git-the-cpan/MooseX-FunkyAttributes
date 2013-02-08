@@ -1,3 +1,23 @@
+=head1 PURPOSE
+
+Check the C<DelegatedAttribute> trait works using a C<House> class which
+delegates its C<door_bell> attribute to its C<door>'s C<bell> attribute.
+
+Checks with both mutable and immutable class.
+
+=head1 AUTHOR
+
+Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
+
+=head1 COPYRIGHT AND LICENCE
+
+This software is copyright (c) 2012-2013 by Toby Inkster.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
 BEGIN {
 	package Local::Bell;
 	no thanks;

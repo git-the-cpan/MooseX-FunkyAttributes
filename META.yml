@@ -37,4 +37,4 @@ resources:
   homepage: https://metacpan.org/release/MooseX-FunkyAttributes
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-moosex-funkyattributes
-version: 0.001
+version: 0.002

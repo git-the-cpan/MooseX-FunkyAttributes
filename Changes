@@ -6,6 +6,15 @@ Home page:    <https://metacpan.org/release/MooseX-FunkyAttributes>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-FunkyAttributes>
 Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
+0.002  2013-02-08
+
+ - (Documentation) Document the metaobject interface (albeit briefly).
+ - (Documentation) Document the test suite.
+ - (Documentation) Include example scripts.
+ - (Documentation) Show MooseX::CustomInitArgs in example, and include in
+   SEE ALSO.
+ - General tiding up.
+
 0.001  2012-09-17  # Initial release
 
 

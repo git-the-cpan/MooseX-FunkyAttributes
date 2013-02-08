@@ -1,9 +1,32 @@
+=head1 PURPOSE
+
+Check the C<FunkyAttribute> trait works, using a C<Circle> class having
+C<diameter>, C<circumference> and C<area> attributes calculated from
+C<radius>.
+
+=head1 TODO
+
+Check an immutable class.
+
+=head1 AUTHOR
+
+Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
+
+=head1 COPYRIGHT AND LICENCE
+
+This software is copyright (c) 2012-2013 by Toby Inkster.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
 BEGIN {
 	package Local::Circle;
 	no thanks;
 	use Moose;
 	use MooseX::FunkyAttributes;
-	use constant PI => 3.14159; 
+	use constant PI => 3.14159;
 	has radius => (
 		is         => 'rw',
 		isa        => 'Num',

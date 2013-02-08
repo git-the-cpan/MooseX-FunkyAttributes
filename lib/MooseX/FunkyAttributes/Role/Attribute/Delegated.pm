@@ -1,8 +1,12 @@
 package MooseX::FunkyAttributes::Role::Attribute::Delegated;
 
+use 5.008;
+use strict;
+use warnings;
+
 BEGIN {
 	$MooseX::FunkyAttributes::Role::Attribute::Delegated::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::FunkyAttributes::Role::Attribute::Delegated::VERSION   = '0.001';
+	$MooseX::FunkyAttributes::Role::Attribute::Delegated::VERSION   = '0.002';
 }
 
 use Moose::Role;
@@ -217,6 +221,22 @@ L<MooseX::FunkyAttributes::Role::Attribute> are also available. The
 C<delegated_blah> options above are essentially just shortcuts
 for defining them.
 
+Your attribute metaobject has the following methods (in addition to the
+standard L<MooseX::FunkyAttributes::Role::Attribute> and
+L<Moose::Meta::Attribute> stuff):
+
+=over
+
+=item C<delegated_to>
+
+=item C<delegated_accessor>
+
+=item C<delegated_clearer>
+
+=item C<delegated_predicate>
+
+=back
+
 =head1 BUGS
 
 Please report any bugs to
@@ -232,7 +252,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012-2013 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

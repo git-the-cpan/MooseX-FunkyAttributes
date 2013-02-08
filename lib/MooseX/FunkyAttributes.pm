@@ -1,11 +1,13 @@
 package MooseX::FunkyAttributes;
 
+use 5.008;
+use strict;
+use warnings;
+
 BEGIN {
 	$MooseX::FunkyAttributes::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::FunkyAttributes::VERSION   = '0.001';
+	$MooseX::FunkyAttributes::VERSION   = '0.002';
 }
-
-use 5.008;
 
 use aliased qw(
 	MooseX::FunkyAttributes::Role::Attribute
@@ -53,11 +55,6 @@ MooseX::FunkyAttributes - add code smell to your Moose attributes
       custom_set  => sub { $_->radius( $_[-1] / 2 ) },
       custom_has  => sub { $_->has_radius },
    );
-
-=head1 STATUS
-
-At the moment this is primarily an experiment. It's probably not wise to
-deploy it in live projects.
 
 =head1 DESCRIPTION
 
@@ -151,9 +148,15 @@ L<MooseX::FunkyAttributes::Role::Attribute>,
 L<MooseX::FunkyAttributes::Role::Attribute::InsideOut>,
 L<MooseX::FunkyAttributes::Role::Attribute::Delegated>.
 
+These effect storage for whole object instances; not just one attribute:
 L<MooseX::GlobRef>,
 L<MooseX::InsideOut>,
 L<MooseX::ArrayRef>.
+
+L<MooseX::CustomInitArgs> - if you have (as in the SYNOPSIS) one attribute
+which is calculated from another (diameter from radius), MooseX::CustomInitArgs
+will allow you to accept both attributes in the constructor (i.e. accept a
+diameter in the constructor, halve it, and set the radius attribute).
 
 =head1 AUTHOR
 
@@ -161,7 +164,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012-2013 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
