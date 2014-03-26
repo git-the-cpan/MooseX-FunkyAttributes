@@ -1,9 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MooseX-FunkyAttributes
-Upstream-Contact: Toby Inkster <tobyink@cpan.org>
+Upstream-Contact: Toby Inkster (TOBYINK) <tobyink@cpan.org>
 Source: https://metacpan.org/release/MooseX-FunkyAttributes
 
-Files: examples/inside-out.pl
+Files: README
  lib/MooseX/FunkyAttributes.pm
  lib/MooseX/FunkyAttributes/Meta/Accessor.pm
  lib/MooseX/FunkyAttributes/Role/Attribute.pm
@@ -14,78 +14,55 @@ Files: examples/inside-out.pl
  t/03insideout.t
  t/04delegated.t
  t/05builder.t
-Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
+Copyright: This software is copyright (c) 2012-2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: Changes
- HACKING
+ META.json
+ META.yml
+ dist.ini
+ doap.ttl
+Copyright: Copyright 2014 Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: COPYRIGHT
+ CREDITS
+ SIGNATURE
+Copyright: None
+License: public-domain
+
+Files: CONTRIBUTING
+ INSTALL
  LICENSE
- MANIFEST.SKIP
- Makefile.PL
- README
- meta/changes.pret
- meta/doap.pret
- meta/makefile.pret
 Copyright: Unknown
 License: Unknown
 
-Files: inc/Module/Install.pm
- inc/Module/Install/Include.pm
- inc/Module/Install/Metadata.pm
-Copyright: Copyright 2002 - 2012 Brian Ingerson, Audrey Tang and Adam Kennedy.
+Files: examples/inside-out.pl
+Copyright: This software is copyright (c) 2012-2013 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: inc/unicore/Name.pm
- inc/utf8.pm
-Copyright: 1993-2012, Larry Wall and others
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/TrustMetaYml.pm
- inc/Module/Package/Dist/RDF.pm
-Copyright: This software is copyright (c) 2011-2012 by Toby Inkster.
+Files: t/rt94201.t
+Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: examples/funky-circle.pl
 Copyright: This software is copyright (c) 2013 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: inc/Module/Install/Makefile.pm
-Copyright: Copyright 2002, 2003, 2004 Audrey Tang and Brian Ingerson.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: COPYRIGHT
-Copyright: None
-License: public-domain
-Comment: This file! Automatically generated.
-
-Files: inc/Module/Install/Package.pm
-Copyright: Copyright (c) 2011. Ingy doet Net.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Module/Install/Base.pm
-Copyright: Copyright 2003, 2004 by Audrey Tang <autrijus@autrijus.org>.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/Scalar/Util.pm
-Copyright: Copyright (c) 1997-2007 Graham Barr <gbarr@pobox.com>. All rights reserved.
- Copyright (c) 1999 Tuomas J. Lukka <lukka@iki.fi>. All rights reserved.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: inc/YAML/Tiny.pm
-Copyright: Copyright 2006 - 2012 Adam Kennedy.
+Files: Makefile.PL
+Copyright: Copyright 2013 Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 License: Artistic-1.0
- This software is Copyright (c) 2013 by the copyright holder(s).
+ This software is Copyright (c) 2014 by the copyright holder(s).
  
  This is free software, licensed under:
  
    The Artistic License 1.0
 
 License: GPL-1.0
- This software is Copyright (c) 2013 by the copyright holder(s).
+ This software is Copyright (c) 2014 by the copyright holder(s).
  
  This is free software, licensed under:
  
    The GNU General Public License, Version 1, February 1989
-

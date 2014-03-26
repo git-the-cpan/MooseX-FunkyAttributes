@@ -1,3 +1,7 @@
+=pod
+
+=encoding utf-8
+
 =head1 PURPOSE
 
 Checks lazy builders work with C<InsideOutAttribute>.
@@ -8,7 +12,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012-2013 by Toby Inkster.
+This software is copyright (c) 2012-2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
@@ -32,13 +36,15 @@ BEGIN {
 #######################################################################
 
 use Test::More;
+use Test::Moose;
 
-my $A = new_ok 'Local::Circle';
-is($A->radius, 10, '$A->radius == 10');
-
-#done_testing(); exit;
-
-my $B = new_ok 'Local::Circle' => [ radius => 12 ];
-is($B->radius, 12, '$B->radius == 12');
+with_immutable
+{
+	my $A = new_ok 'Local::Circle';
+	is($A->radius, 10, '$A->radius == 10');
+	
+	my $B = new_ok 'Local::Circle' => [ radius => 12 ];
+	is($B->radius, 12, '$B->radius == 12');
+} qw( Local::Circle );
 
 done_testing();

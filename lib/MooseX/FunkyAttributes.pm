@@ -6,8 +6,14 @@ use warnings;
 
 BEGIN {
 	$MooseX::FunkyAttributes::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::FunkyAttributes::VERSION   = '0.002';
+	$MooseX::FunkyAttributes::VERSION   = '0.003';
 }
+
+use Exporter::Shiny our(@EXPORT) = qw(
+	FunkyAttribute
+	InsideOutAttribute
+	DelegatedAttribute
+);
 
 use aliased qw(
 	MooseX::FunkyAttributes::Role::Attribute
@@ -23,8 +29,6 @@ use aliased qw(
 	MooseX::FunkyAttributes::Role::Attribute::Delegated
 	DelegatedAttribute
 );
-
-use Exporter::Everything;
 
 1;
 
@@ -164,7 +168,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012-2013 by Toby Inkster.
+This software is copyright (c) 2012-2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
